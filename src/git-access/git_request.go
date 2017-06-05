@@ -90,6 +90,9 @@ func isValidAction(action string) bool {
 
 func repoAccessAllowed(request *CommandRequest) bool {
 	permissionCheck, _ := http.NewRequest("GET", request.permissionCheckUrl, nil)
+
+	fmt.Printf("validating request %s", request.permissionCheckUrl);
+
 	values := permissionCheck.URL.Query()
 
 	values.Add("user", request.user)

@@ -28,7 +28,7 @@ type UserKeys struct {
 //     { user: "1", keys: ["ssh-rsa AAA...==", "ssh-rsa AAB...=="]},
 //     { user: "2", keys: ["ssh-rsa AAD...=="]},
 //     ...
-//   ]
+//   ]http://digitalbueno.com/ssh.php
 //
 func RequestAuthorizedKeys(commandBinary string, keysUrl string) {
 	users := readKeys(keysUrl)
