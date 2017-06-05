@@ -8,6 +8,7 @@ import (
 	"os/exec"
 	"strings"
 	"syscall"
+	"fmt"
 )
 
 type CommandRequest struct {
